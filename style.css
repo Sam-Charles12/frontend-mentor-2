@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.text-1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    color: hsl(212, 6%, 44%);
+    text-align: center;
+    margin-top: 40px;
+}
+.text-2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+}
+.text-3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+}
+.grid-display{
+    display: grid;
+    gap: 10px;
+    height: 70%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "grid-1"
+    "grid-2"
+    "grid-3"
+    "grid-4";
+    margin-bottom: 50px;
+}
+.grid-box-1{
+    grid-area: grid-1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    box-shadow: -12px 12px 12px -12px rgba(0, 0, 0, 0.3);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    gap: 10px;
+}
+.grid-box-1::before{
+    content: '';
+    height: 3px;
+    background:hsl(180, 62%, 55%) ;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px ;
+}
+.grid-box-2{
+    grid-area: grid-2;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    box-shadow: -12px 12px 12px -12px rgba(0, 0, 0, 0.3);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    gap: 10px;
+}
+.grid-2-main-text{
+    width: 80%;
+    display: flex;
+}
+.grid-box-2::before{
+    content: '';
+    height: 3px;
+    background:hsl(0, 78%, 62%) ;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px ;
+}
+.grid-box-3{
+    grid-area: grid-3;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    box-shadow: -12px 12px 12px -12px rgba(0, 0, 0, 0.3);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    gap: 10px;
+}
+.grid-3-main-text{
+    width: 80%;
+    display: flex;
+}
+.grid-box-3::before{
+    content: '';
+    height: 3px;
+    background:hsl(34, 97%, 64%) ;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px ;
+}
+.grid-box-4{
+    grid-area: grid-4;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    box-shadow: -12px 12px 12px -12px rgba(0, 0, 0, 0.3);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    gap: 10px;
+}
+.grid-4-main-text{
+    width: 80%;
+    display: flex;
+}
+.grid-box-4::before{
+    content: '';
+    height: 3px;
+    background:hsl(212, 86%, 64%) ;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px ;
+}
+.main-text{
+    width: 80%;
+    display: flex;
+}
+.main-text p{
+    font-weight: 600;
+    font-size: 18px;
+}
+.sub-text {
+    width: 80%;
+    display: flex;
+}
+.sub-text p{
+    font-weight: 200;
+    font-size: 15px;   
+}
+.img{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and (min-width: 1440px){
+    .container{
+        width: 80%;
+    }
+    .text-3{
+        margin-bottom: 50px;
+    }
+    .grid-display{
+        display: grid;
+        width: 100%;
+        gap: 20px;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: 
+        ". grid-2 ."
+        "grid-1 grid-2 grid-4"
+        "grid-1 grid-3 grid-4"
+        ". grid-3 .";
+    }
+}
